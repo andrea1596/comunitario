@@ -30,6 +30,9 @@ $("#formRegistrar").submit(function(e) {
 				direccion: {
                            required: true,
                            minlength: 3
+                   },
+                password: {
+                           required: true
                    }
            },
            messages: {
@@ -59,10 +62,13 @@ $("#formRegistrar").submit(function(e) {
                            maxlength: "No pueden ser más de 10 digitos"
                    },
 					direccion: {
-						   minlength: "Minimo dos Letras",
+						   minlength: "Minimo 3 letras",
                            required: "Escribe tu dirección"
                            
                    },
+                   password: {
+                   			required: "Introduzca contraseña"
+                   }
            },
 
         //errorPlacement: function(error, element) {
@@ -71,10 +77,18 @@ $("#formRegistrar").submit(function(e) {
          submitHandler: function(form) {
             $.post("/registro/registrar", $("#formRegistrar").serialize(), function(fragment) {
 			console.log(fragment);
+			 $('#nombre').val('');
+			 $('#apellidoPaterno').val('');
+			 $('#apellidoMaterno').val('');
+			 $('#edad').val('');
+			 $('#telefono').val('');
+			 $('#direccion').val('');
+			 $('#password').val('');
 			$("#rest").replaceWith(fragment);
             });
             return false;
          }
 	
     });
+    
 });

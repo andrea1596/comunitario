@@ -31,7 +31,7 @@ public class RegistroController {
 	@RequestMapping(value = "/registrar", method = RequestMethod.POST)
 	
     public String basicForm(String nombre, String apellidoPaterno, String apellidoMaterno, int edad, String direccion,
-    	String correo, String telefono, String sexo, Model model) {
+    	String correo,String password, String telefono, String sexo, Model model) {
 		System.out.println("entre a registro");
 		permiso.setId(1L);
 		permiso.setNombre("lectura");
@@ -53,6 +53,7 @@ public class RegistroController {
 		u.setCorreo(correo);
 		u.setTelefono(telefono);
 		u.setSexo(sexo);
+		u.setPassword(password);
 		//u.getRoles().add(rol);
 		u=userService.guardarUsuario(u);
 		model.addAttribute("usuario", u);
