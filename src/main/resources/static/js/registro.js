@@ -77,14 +77,16 @@ $("#formRegistrar").submit(function(e) {
          submitHandler: function(form) {
             $.post("/registro/registrar", $("#formRegistrar").serialize(), function(fragment) {
 			console.log(fragment);
+			$("#rest").replaceWith(fragment);
 			 $('#nombre').val('');
 			 $('#apellidoPaterno').val('');
 			 $('#apellidoMaterno').val('');
 			 $('#edad').val('');
 			 $('#telefono').val('');
 			 $('#direccion').val('');
+			  $('#correo').val('');
 			 $('#password').val('');
-			$("#rest").replaceWith(fragment);
+			 alert("Registro exitoso");
             });
             return false;
          }
