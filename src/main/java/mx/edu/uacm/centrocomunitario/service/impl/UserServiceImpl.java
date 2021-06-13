@@ -1,5 +1,7 @@
 package mx.edu.uacm.centrocomunitario.service.impl;
 
+import java.util.ArrayList;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,4 +20,10 @@ public class UserServiceImpl implements UserService {
 		return userRepository.save(u);
 	}
 
+	public ArrayList<User> obtenerUsuarios(){
+		ArrayList<User> usuarios= new ArrayList<User>();
+		User u = new User();
+		usuarios=(ArrayList<User>) userRepository.findAll();
+		return usuarios;
+	}
 }
