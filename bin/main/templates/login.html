@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org"
 	xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
-<head>
-<link rel="stylesheet" type="text/css" th:href="@{webjars/bootstrap/5.0.1/css/bootstrap.min.css}"/>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
+<th:block th:insert="index::encabezado"/>
 <body style="background-color: #e3f2fd;">
+<nav th:insert="index::navbar"></nav>
 
 <div class="container-fluid " style="background-color: #e3f2fd;">
   <div class="container p-3 my-3 border bg-light " >

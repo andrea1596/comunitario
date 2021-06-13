@@ -1,0 +1,42 @@
+mx/edu/uacm/centrocomunitario/entity/Centro.java
+ mx.edu.uacm.centrocomunitario.entity.Centro
+mx/edu/uacm/centrocomunitario/service/UserService.java
+ mx.edu.uacm.centrocomunitario.service.UserService
+mx/edu/uacm/centrocomunitario/service/PermisoService.java
+ mx.edu.uacm.centrocomunitario.service.PermisoService
+mx/edu/uacm/centrocomunitario/entity/Asistencia.java
+ mx.edu.uacm.centrocomunitario.entity.Asistencia
+mx/edu/uacm/centrocomunitario/repository/RolRepository.java
+ mx.edu.uacm.centrocomunitario.repository.RolRepository
+mx/edu/uacm/centrocomunitario/CentroComunitarioApplication.java
+ mx.edu.uacm.centrocomunitario.CentroComunitarioApplication
+mx/edu/uacm/centrocomunitario/MvcConfig.java
+ mx.edu.uacm.centrocomunitario.MvcConfig
+mx/edu/uacm/centrocomunitario/controller/RegistroController.java
+ mx.edu.uacm.centrocomunitario.controller.RegistroController
+mx/edu/uacm/centrocomunitario/entity/Permiso.java
+ mx.edu.uacm.centrocomunitario.entity.Permiso
+mx/edu/uacm/centrocomunitario/entity/Actividad.java
+ mx.edu.uacm.centrocomunitario.entity.Actividad
+mx/edu/uacm/centrocomunitario/repository/UserRepository.java
+ mx.edu.uacm.centrocomunitario.repository.UserRepository
+mx/edu/uacm/centrocomunitario/entity/AsistenciaId.java
+ mx.edu.uacm.centrocomunitario.entity.AsistenciaId
+mx/edu/uacm/centrocomunitario/entity/User.java
+ mx.edu.uacm.centrocomunitario.entity.User
+mx/edu/uacm/centrocomunitario/repository/PermisoRepository.java
+ mx.edu.uacm.centrocomunitario.repository.PermisoRepository
+mx/edu/uacm/centrocomunitario/service/impl/RolServiceImpl.java
+ mx.edu.uacm.centrocomunitario.service.impl.RolServiceImpl
+mx/edu/uacm/centrocomunitario/WebSecurityConfig.java
+ mx.edu.uacm.centrocomunitario.WebSecurityConfig
+mx/edu/uacm/centrocomunitario/entity/Rol.java
+ mx.edu.uacm.centrocomunitario.entity.Rol
+mx/edu/uacm/centrocomunitario/service/RolService.java
+ mx.edu.uacm.centrocomunitario.service.RolService
+mx/edu/uacm/centrocomunitario/controller/LoginController.java
+ mx.edu.uacm.centrocomunitario.controller.LoginController
+mx/edu/uacm/centrocomunitario/service/impl/PermisoServiceImpl.java
+ mx.edu.uacm.centrocomunitario.service.impl.PermisoServiceImpl
+mx/edu/uacm/centrocomunitario/service/impl/UserServiceImpl.java
+ mx.edu.uacm.centrocomunitario.service.impl.UserServiceImpl
